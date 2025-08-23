@@ -2,22 +2,37 @@
 
 This repository provides a comprehensive analysis of *unofficial* Trader Joe’s pricing data using SQL window functions for advanced trend detection and statistical insights.
 
-- **Data source**: Price records are collected unofficially (publicly available data scraping or other methods — clearly specify process in “Data Collection” section).
-- **Analysis engine**: SQL queries enhanced with window functions (e.g., `ROW_NUMBER()`, `LEAD()`, `LAG()`, `AVG() OVER (...)`) to compute moving averages, identify price spikes, detect anomalies and compare item trajectories over time.
-- **Output & visualization**: Includes summary tables, trend plots, and CSV exports to highlight pricing dynamics, supported by SQL and optionally additional Python or R scripts to augment insights.
-- **Ideal for**: Data analysts, SQL practitioners, or anyone interested in grocer pricing dynamics and how to leverage window functions for time-series data analysis.
+---
+
+## Project Overview
+
+This project showcases the practical application of SQL window functions to real-world data. Using commands such as `OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, and `LEAD`, the analysis reveals trends, anomalies, and pricing patterns within unofficial Trader Joe’s data.
 
 ---
 
-##  Why This Project Matters
+## Data Sources
+
+- [Trader Joe’s price tracking project (GitHub)](https://github.com/cmoog/traderjoes?tab=readme-ov-file)  
+- [Trader Joe’s store locations dataset (Kaggle)](https://www.kaggle.com/datasets/evansimpson/trader-joes-locations?select=store_info.csv)  
+
+---
+
+## Why This Project Matters
 
 Understanding the fluctuations in Trader Joe’s prices—even unofficially—can offer practical insights into market behavior, promotional patterns, and consumer-friendly pricing strategies. Window functions enable analysts to uncover nuanced trends like:
 
-- Fast-moving price changes (e.g., promotions or markdowns)
-- Rolling average comparisons (week-over-week or month-over-month)
-- Item-level trend deviations and volatility
+- Fast-moving price changes (e.g., promotions or markdowns)  
+- Rolling average comparisons (week-over-week or month-over-month)  
+- Item-level trend deviations and volatility  
 
 ---
 
-*Feel free to explore the code, tweak the SQL queries, or adapt the setup for other retail datasets!*
+## Output & Visualization
 
+- SQL queries for extracting trends and anomalies  
+- CSV exports with summarized results  
+- Visualizations (optional) to showcase pricing patterns  
+
+---
+
+*Feel free to explore the code, tweak the SQL queries, or adapt the setup for other retail datasets!*  
